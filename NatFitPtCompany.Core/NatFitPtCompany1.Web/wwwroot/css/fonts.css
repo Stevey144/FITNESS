@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:900i&display=swap');
+
+h1 {
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size:120px;
+}

@@ -1,0 +1,75 @@
+/* TABLET */
+.text-messages {
+  max-width: 500px;
+}
+
+.big{display:block}
+.small {display: none}
+
+@media (max-width: 1300px) {
+
+  .big {display: none}
+  .small{display: block}
+
+  .container {
+    padding: 50px 10px;
+  }
+
+
+  .c-t {
+    padding:0;
+  }
+
+  .sub-header{
+    height:60%;
+  }
+
+}
+
+/* PHONE */
+@media (max-width: 850px) {
+  .container, .form-container, .text-message, .nav-bar {
+    padding: 20px 10px;
+  }
+
+  .c-i {
+    display:block;
+  }
+  .c-i img {
+    width: 100%;
+  }
+
+  .card {
+    /*display:block;*/
+    flex-direction: column;
+  }.card-rev {
+    flex-direction: column-reverse;
+  }
+
+  .sub-header{
+    height:10em;
+  }
+
+  .full-header h1, .sub-header h1{
+    font-size: 60px;
+  }
+
+  /* .container {margin-top: 10px;} */
+
+  .gift-card-container {
+ flex-direction: column;
+
+}
+
+.gift-card-container > * {width:  100%;}
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

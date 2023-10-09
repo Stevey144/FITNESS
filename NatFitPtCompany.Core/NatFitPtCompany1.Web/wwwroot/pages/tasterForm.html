@@ -1,0 +1,40 @@
+<html ng-app="natFit">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133458544-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133458544-2');
+    </script>
+
+
+</head>
+<body ng-controller="offerController" class='subView'>
+    <div class='form-container'>
+        <h2>Claim your free taster session</h2>
+        <p>
+            <br><Br>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="FirstName" ng-model="formData.firstName"><br><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="LastName" ng-model="formData.lastName"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="OrganisationEmail" ng-model="formData.organisationEmail"><br><br>
+            <label for="mobile">Mobile</label><br>
+            <input type="tel" id="mobile" name="MobileNumber" ng-model="formData.mobileNumber"><br><br>
+            <input type='submit' value='Claim your taster session!' ng-click="postBusinessOffer()">
+    </div>   
+   <div class='formBubble' ng-show="formData.MessageVisibility"> <p class="formBubble" ng-model="formData.RetMessage">Thanks, Please your taster session request has been successfully saved, we will get in touch with you shortly.</p></div>	
+    <script src='js/routing.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+
