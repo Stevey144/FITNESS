@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\NatFitPtCompany1.Web.props" />
+</Project>
